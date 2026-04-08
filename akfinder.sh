@@ -168,7 +168,7 @@ eval "$FIND_CMD" | while IFS= read -r -d '' file; do
         # Sensitive words: match words starting with these (allowing following chars, e.g., accesskey)
         my @sensitive = qw(
             key secret access credential token password auth
-            client_id client_secret private_key api_key
+            client_id client_secret private_key api_key sms
         );
         # Exclude words: must be whole words (exact match)
         my @exclude = qw(
